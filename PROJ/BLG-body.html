@@ -1,0 +1,102 @@
+<html>
+<head>
+  <title>Untitled Document</title><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css" rel="stylesheet">
+	
+	  <style type="text/css">
+#footer {
+    padding: 20px;
+    float:right;
+}
+  #blg-form{
+    margin-top:50px;
+  }
+
+  iframe{
+    margin-top:50px;
+    width:100%;
+  }
+  .required-message{
+    display:none;
+  }
+
+  body{
+    background-color: #fff;
+  }
+
+  .navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+  }
+  .logo{
+    color: white;
+  }
+  nav.mynav {
+    background-color: #2e3842;
+  }
+iframe {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	background-image:url('images/ripple.gif');
+	
+}
+  </style>
+</head>
+
+<body>
+<!--------DOCUMENTS---------->
+  <div class="container" id="blg-documents">
+		<h2>DOCUMENTS</h2>
+		
+    <iframe class="frame" frameborder="0" height="500px" src="https://drive.google.com/embeddedfolderview?id=0B0dLlVjIQ4BnUWVfOFFGU1Q2enc#list" width="100%"></iframe>
+		<hr />
+  </div>
+<!-------MAIN TRACKER---------->
+<div id="tracker" class="container">
+<h2>PROJECT TRACKER</h2>
+<p><a href="https://tinyurl.com/serbia-mne" target="_blank">Click here </a>to open the tracker externally</p>
+<hr />
+<!--------TICKET PORTAL TRACKER---------->
+</div>
+<div class="container" id="ticket-portal">
+<h2>TICKET PORTAL</h2>
+<p></p>
+<hr />
+</div>
+
+  <!-- Script to show dialogue and reset form -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script><!-- Latest compiled and minified JavaScript -->
+	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+  <script>
+	$(function(){
+    $( "#datepicker" ).datepicker({
+    autoclose: true
+		});
+	});
+  // replace "ss-submit" with the ID of your submit button
+  document.getElementById("ss-submit").addEventListener("click", function(){
+  // replace the "It works!" with what you want to appear in the Javascript dialogue
+
+  alert("Thank you!");
+  // replace "ss-form" with the ID of your form
+  setTimeout(function() {
+			document.getElementById("ss-form").reset()
+  }, 10);
+  });
+  $(".nav li").on("click", function() {
+      $(".nav li").removeClass("active");
+      $(this).addClass("active");
+    });
+
+
+  </script>
+</body>
+</html>
