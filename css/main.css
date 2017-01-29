@@ -301,7 +301,10 @@ ul.ss-choices {
   background-color: #449d44;
   border-color: #398439;
 }
-
+.container.cbody{
+	  padding-left: 0px;
+    padding-right: 0px; 
+}
 
 //Custom image resposinve
 .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{
