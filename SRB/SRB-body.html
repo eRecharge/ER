@@ -1,0 +1,118 @@
+<html>
+<head>
+  <title>Untitled Document</title><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css" rel="stylesheet">
+	
+	  <style type="text/css">
+#footer {
+    padding: 20px;
+    float:right;
+}
+  #blg-form{
+    margin-top:50px;
+  }
+
+  iframe{
+    margin-top:50px;
+    width:100%;
+  }
+  .required-message{
+    display:none;
+  }
+
+  body{
+    background-color: #fff;
+  }
+
+  .navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+  }
+  .logo{
+    color: white;
+  }
+  nav.mynav {
+    background-color: #2e3842;
+  }
+  </style>
+</head>
+
+<body>
+<!--------DOCUMENTS---------->
+  <div class="container" id="docs">
+		<h2>DOCUMENTS</h2>
+			<!-- <img class="center-block" src="images/loader2.gif" style="opacity:.5;width:50%;"> -->
+    <iframe class="frame" frameborder="0" height="500px" src="https://drive.google.com/embeddedfolderview?id=0B0dLlVjIQ4BnTnZZVXhtdmNPUFU#list" onload="closeLoader()" width="100%"></iframe>
+		
+  </div>
+	
+<div class="container" id="flow">
+		<h2>CHANNEL WISE FLOW</h2>
+    <iframe class="frame" frameborder="0" height="500px" src="https://drive.google.com/embeddedfolderview?id=0B0dLlVjIQ4BnWHFRTFFxTW0tYzg#grid" width="100%"></iframe>
+		<hr />
+</div>
+<!-------MAIN TRACKER---------->
+<div id="tracker" class="container-fluid">
+<h2>PROJECT TRACKER</h2>
+<div class="panel-group" id="mytracker">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title" data-toggle="collapse" data-target="#summary" data-parent="#mytracker" role="button">
+				<span>SUMMARY</span>
+			</h4>
+		</div>
+		<div id="summary" class="panel-collapse collapse">
+			<div class="panel-body">
+				<iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=63211683&amp;range=A:F&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title" data-toggle="collapse" data-parent="#mytracker" data-target="#issues-post" role="button">
+				<span>ISSUES-POST LIVE</span>
+			</h4>
+		</div>
+		<div id="issues-post" class="panel-collapse collapse">
+			<div class="panel-body">
+				<iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=882979886&amp;range=A:E&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<p><a href="https://tinyurl.com/serbia-mne" target="_blank">Click here </a>to open the tracker externally</p>
+<hr />
+
+  <!-- Script to show dialogue and reset form -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script><!-- Latest compiled and minified JavaScript -->
+	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+  <script>
+	$(function(){
+    $( "#datepicker" ).datepicker({
+    autoclose: true
+		});
+	});
+  // replace "ss-submit" with the ID of your submit button
+  document.getElementById("ss-submit").addEventListener("click", function(){
+  // replace the "It works!" with what you want to appear in the Javascript dialogue
+
+  alert("Thank you!");
+  // replace "ss-form" with the ID of your form
+  setTimeout(function() {
+			document.getElementById("ss-form").reset()
+  }, 10);
+  });
+
+
+
+  </script>
+</body>
+</html>
