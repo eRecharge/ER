@@ -57,3 +57,17 @@ $(document).ajaxComplete(function(){
 	}
 	});
 });
+
+/* Top Stats Show Hide */
+	$(document).ready(function() {
+		$("#topstats").click(function() {
+			$(".topstats").slideToggle(100);
+		});
+		$(document).ajaxStart(function(){
+			$(".loading").fadeIn();
+		});
+		$(document).ajaxStop(function(){
+			$(".loading").fadeOut();
+		});
+	});
+
