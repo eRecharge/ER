@@ -60,7 +60,7 @@ $(document).ajaxComplete(function(){
 
 /* Top Stats Show Hide */
 	$(document).ready(function() {
-		$('.loading').css('display','none');
+		$('.loading').fadeOut();
 		$("#topstats").click(function() {
 			$(".topstats").slideToggle(100);
 		});
