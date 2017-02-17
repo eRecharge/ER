@@ -62,7 +62,7 @@ $(document).ajaxComplete(function(){
 	$(document).ready(function() {
 		setTimeout(function() {
   		  $(".loading").fadeOut();
-  		}, 10);
+  		}, 50);
 		
 		$("#topstats").click(function() {
 			$(".topstats").slideToggle(100);
