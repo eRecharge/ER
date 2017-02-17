@@ -60,8 +60,10 @@ $(document).ajaxComplete(function(){
 
 /* Top Stats Show Hide */
 	$(document).ready(function() {
-		$('.loading').fadeIn(100);
-		$('.loading').fadeOut(100);
+		setTimeout(function() {
+  		  $(".loading").fadeOut();
+  		}, 10);
+		
 		$("#topstats").click(function() {
 			$(".topstats").slideToggle(100);
 		});
