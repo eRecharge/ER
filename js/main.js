@@ -1,3 +1,8 @@
+// Fade Image on load
+$(document).ready(function(){
+	$('img').fadeIn();
+});
+
 /*Auto close on navbar click*/
 $('.navbar-collapse .main-loader').click(function(){
     $(".navbar-collapse").collapse('hide');
