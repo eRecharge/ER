@@ -1,0 +1,122 @@
+<html>
+<head>
+  <title>Untitled Document</title><!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css" rel="stylesheet">
+	
+	  <style type="text/css">
+#footer {
+    padding: 20px;
+    float:right;
+}
+  #blg-form{
+    margin-top:50px;
+  }
+
+  iframe{
+    margin-top:50px;
+    width:100%;
+  }
+  .required-message{
+    display:none;
+  }
+
+  body{
+    background-color: #fff;
+  }
+
+  .navbar-toggle .icon-bar{
+    color: #fff;
+    background: #fff;
+  }
+  .logo{
+    color: white;
+  }
+  nav.mynav {
+    background-color: #2e3842;
+  }
+  </style>
+</head>
+
+<body>
+
+<!--------DB Tracker Serbia---------->
+<div class="container cbody" id="srb-db">
+<div class="col-sm-offset-2 col-sm-8">
+	<h3 class="text-center">DB Changes</h3>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfKWRMVqXlGj0VgFvy-HGQHqrzTfJu35r_QU3GtUM0jaRMxBw/formResponse" method="POST" id="ss-form" target="secret-frame2" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0;">
+
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_351907337"><div class="ss-q-title">NAME
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto">Please enter your name.</div></label>
+
+<input type="text" name="entry.351907337" value="" class="ss-q-short" id="entry_351907337" dir="auto" aria-label="NAME Please enter your name. " title="">
+<div class="error-message" id="221920416_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1106032959"><div class="ss-q-title">Module/Purpose
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto">For which module/what purpose the DB change is performed (optional).?</div></label>
+
+<input type="text" name="entry.1106032959" value="" class="ss-q-short" id="entry_1106032959" dir="auto" aria-label="Module/Purpose For which module/what purpose the DB change is performed (optional).? " title="">
+<div class="error-message" id="1863446486_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-paragraph-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1849472964"><div class="ss-q-title">Query
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto">DB Query used</div></label>
+
+<textarea name="entry.1849472964" rows="8" cols="0" class="ss-q-long" id="entry_1849472964" dir="auto" aria-label="Query DB Query used "></textarea>
+<div class="error-message" id="616517406_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-7072996494859449976&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+
+<input type="hidden" name="fbzx" value="-7072996494859449976">
+<div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
+<div class="ss-item ss-navigate">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+</div></ol></form>
+<iframe height="0" id="secret-frame2" name="secret-frame2" style="display: none;" width="0"></iframe>
+</div></div>	
+
+  <!-- Script to show dialogue and reset form -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script><!-- Latest compiled and minified JavaScript -->
+	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+  <script>
+	$(function(){
+    $( "#datepicker" ).datepicker({
+    autoclose: true
+		});
+	});
+  // replace "ss-submit" with the ID of your submit button
+  document.getElementById("ss-submit").addEventListener("click", function(){
+  // replace the "It works!" with what you want to appear in the Javascript dialogue
+
+  alert("Thank you!");
+  // replace "ss-form" with the ID of your form
+  setTimeout(function() {
+			document.getElementById("ss-form").reset()
+  }, 10);
+  });
+
+
+
+  </script>
+</body>
+</html>
