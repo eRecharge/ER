@@ -6,7 +6,11 @@ body {
   color: #5a5a5a;
   background-color: #f8f8f8;
 }
-
+iframe.docframe {
+    /* margin: auto; */
+    position: absolute;
+    top: 22vh;
+}
 .myLoader,
 .myLoader:before,
 .myLoader:after {
