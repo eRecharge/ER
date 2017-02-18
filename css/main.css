@@ -8,7 +8,7 @@ body {
 }
 iframe.docframe {
     /* margin: auto; */
-    position: absolute;
+    position: fixed;
     top: 22vh;
 }
 .myLoader,
