@@ -395,13 +395,11 @@ svg {
   -webkit-animation: spin 1s ease-in-out infinite alternate both;
           animation: spin 1s ease-in-out infinite alternate both;
   height: 100px;
-  position: relative;
+  position: static;
   width: 100px;
-      position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 48%;
-    top: 44%;
+    margin-top: 13em;
 }
 .loader svg:not(#circle-middle) {
   -webkit-animation: spin 1s ease-in-out infinite alternate both;
