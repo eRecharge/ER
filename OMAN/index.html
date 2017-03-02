@@ -246,6 +246,7 @@ svg {
 		function disableBtn(){
 			$('#ss-conf').addClass('hidden');
 			$('#ss-submit').removeClass('hidden');
+			$('#ss-submit').prop('disabled','true');
 		}
 		function showCollapse(){$('#jsp-btn').collapse('show')}
 		function hideCollapse(){$('#jsp-btn').collapse('hide')}
@@ -260,6 +261,7 @@ $(document).ajaxComplete(function(){
 		}, 10);
 		$('#ss-conf').addClass('hidden');
 		$('#ss-submit').removeClass('hidden');
+		$('#ss-submit').prop('disabled','true');
 	});
 	$('.mod-data').click(function(){
 		$('#mod-name').val($('#main-name').val());
