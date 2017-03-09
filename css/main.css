@@ -350,6 +350,9 @@ ul.ss-choices {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+.modal .close {
+    color: #e8e8e8 !important;
+}
 #ss-submit {
     color: #fff;
     background-color: #5cb85c;
