@@ -113,9 +113,9 @@
 												</div>
 											</label>
 										</li>
-										<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input onClick="hideCollapse()" type="radio" name="entry.174453659" value="__other_option__" id="group_174453659_3" role="radio" class="ss-q-radio ss-q-other-toggle"></span>
+										<li class="ss-choice-item"><label data-toggle="collapse" data-target="#oth" onClick="hideCollapse()"><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.174453659" value="__other_option__" id="group_174453659_3" role="radio" class="ss-q-radio ss-q-other-toggle"></span>
 											<span class="ss-choice-label">Other:</span></label>
-											<span class="ss-q-other-container goog-inline-block "><input type="text" name="entry.174453659.other_option_response" value="" class="ss-q-other" id="entry_174453659_other_option_response" dir="auto" aria-label="Other"></span>
+											<span class="ss-q-other-container goog-inline-block collapse" id="oth"><input type="text" name="entry.174453659.other_option_response" value="" class="ss-q-other" id="entry_174453659_other_option_response" dir="auto" aria-label="Other"></span>
 										</li>
 								</ul>
 								<div class="error-message" id="2096100922_errorMessage"></div>
@@ -156,7 +156,7 @@
 				<div class="ss-item ss-navigate pull-right">
 					<input type="reset" value="Reset" class="jfk-button btn-default" onclick="disableBtn()">
 					<button class="jfk-button btn-danger hidden mod-data" data-toggle="modal" id="ss-conf" data-target="#conf-modal" disabled>Add Configuration Change</button>
-					<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action submitter"	disabled>
+					<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action submitter" disabled><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
 				
 				</div>
 		</ol>
@@ -285,7 +285,8 @@
 					<input type="hidden" name="fbzx" value="-319641174058978431">
 					<div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
 					<div class="ss-item ss-navigate">
-					<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action noreset">
+					<button type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action pull-right noreset" disabled>
+					<i class="fa fa-check" aria-hidden="true"></i> Done</button>
 					</div></ol></form>
 			<iframe height="0" id="secret-frame3" name="secret-frame3" style="display: none;" width="0"></iframe></div>
         </div>
