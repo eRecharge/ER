@@ -221,7 +221,20 @@ body {
   }
 }
 
-/* Custom general styles by remeez */
+/* Custom general styles by rMz */
+/* For Modal */
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
 .navbar-default{
         background-color:rgba(44, 62, 85, 0.7) !important;
 				box-shadow: -1px -1px 15px 2px rgba(51, 51, 51, 0.49);
@@ -236,9 +249,7 @@ body {
 				border-left:rgba(44, 62, 80, 0.9) 5px solid !important;
 				transition:border-left .2s ease;
 		}
-    div#projects{
-        dislpay:none !important;
-    }
+ 
 		.trans-custom{
 				opacity:0.5;
 
