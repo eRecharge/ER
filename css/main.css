@@ -224,16 +224,19 @@ body {
 /* Custom general styles by rMz */
 /* For Modal */
 .fade-scale {
-  transform: scale(0);
+  transform: scale(0.5);
   opacity: 0;
-  -webkit-transition: all .25s linear;
-  -o-transition: all .25s linear;
-  transition: all .25s linear;
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
 .fade-scale.in {
   opacity: 1;
   transform: scale(1);
+  -webkit-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;	 
 }
 .navbar-default{
         background-color:rgba(44, 62, 85, 0.7) !important;
