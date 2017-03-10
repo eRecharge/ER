@@ -58,35 +58,43 @@
 </div>
 <!-------MAIN TRACKER---------->
 <div id="tracker" class="container-fluid">
+<div class="jumbotron">	
 <h2>PROJECT TRACKER</h2>
-<div class="panel-group" id="mytracker">
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title" data-toggle="collapse" data-target="#summary" data-parent="#mytracker" role="button">
-				<span>SUMMARY</span>
-			</h4>
-		</div>
-		<div id="summary" class="panel-collapse collapse">
-			<div class="panel-body">
-				<iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=63211683&amp;range=A:F&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h4 class="panel-title" data-toggle="collapse" data-parent="#mytracker" data-target="#issues-post" role="button">
-				<span>ISSUES-POST LIVE</span>
-			</h4>
-		</div>
-		<div id="issues-post" class="panel-collapse collapse">
-			<div class="panel-body">
-				<iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=882979886&amp;range=A:E&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
-			</div>
-		</div>
-	</div>
+	<p>Preview: <button type="button" class="jfk-button" data-toggle="modal" data-target="#prev-summary">SUMMARY</button>
+	<button type="button" class="jfk-button" data-toggle="modal" data-target="#prev-issues">ISSUES POST-LIVE</button>
+	</p>
+	<p>To Edit Externally: <a class="jfk-button" href="https://tinyurl.com/serbia-mne" target="_blank">Click here </a></p>
+<div class="modal fade" id="prev-summary" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" id="mod-cust">
+          <h4 class="modal-title">SUMMARY</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=63211683&amp;range=A:F&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
+        </div>
+      </div>
+    </div>
 </div>
-<p><a href="https://tinyurl.com/serbia-mne" target="_blank">Click here </a>to open the tracker externally</p>
-<hr />
+<div class="modal fade" id="prev-issues" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" id="mod-cust">
+          <h4 class="modal-title">SUMMARY</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/spreadsheets/d/1c1Ce00ZKZZ3uj13C-RQhWgLy1vNFXzPTN_BaNaaPphs/pubhtml?gid=882979886&amp;range=A:E&amp;single=true&amp;widget=true" width="100%" height="500px" frameborder="0" ></iframe>
+        </div>
+      </div>
+    </div>
+</div>
+	
+</div>		
+</div>
 
   <!-- Script to show dialogue and reset form -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
