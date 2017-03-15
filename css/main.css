@@ -572,3 +572,6 @@ svg {
 div#projects {
     text-align: center;
 }
+.container.featurette {
+    padding-top: 80px;
+}
