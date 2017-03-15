@@ -575,3 +575,5 @@ div#projects {
 .container.featurette {
     padding-top: 80px;
 }
+
+.jumbotron .btn{margin-top:10px;}
