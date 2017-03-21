@@ -66,12 +66,12 @@ $(document).ajaxComplete(function(){
 $(document).ajaxComplete(function(){
 	$('#edit-status').click(function(){
 		$(this).hide();
-		$('#save-status').show();
+		$('#save-status').removeClass('hidden');
 		$('#frame-view').hide();
 		$('#frame-edit').show();
 	});
 	$('#save-status').click(function(){
-		$(this).hide();
+		$(this).addClass('hidden');
 		$('#edit-status').show();
 		$('#frame-view').hide();
 		$('#frame-edit').show();
