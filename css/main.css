@@ -582,3 +582,10 @@ div#projects {
 	min-width: 45%;
 }
 
+#edit-status, #save-status {
+    margin-top: -35px;
+}
+iframe#frame-view {
+    border-radius: 5px;
+    box-shadow: 0 0 7px -1px #cecece;
+}
