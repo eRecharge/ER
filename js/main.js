@@ -62,6 +62,21 @@ $(document).ajaxComplete(function(){
 	}
 	});
 });
+//Enabling and disabling Status Edit
+$(document).ajaxComplete(function(){
+	$('#edit-status').click(function(){
+		$(this).hide();
+		$('#save-status').show();
+		$('#frame-view').hide();
+		$('#frame-edit').show();
+	});
+	$('#save-status').click(function(){
+		$(this).hide();
+		$('#edit-status').show();
+		$('#frame-view').hide();
+		$('#frame-edit').show();
+	});
+});
 
 /* Top Stats Show Hide */
 	$(document).ready(function() {
