@@ -73,8 +73,8 @@ $(document).ajaxComplete(function(){
 	$('#save-status').click(function(){
 		$(this).addClass('hidden');
 		$('#edit-status').show();
-		$('#frame-view').hide();
-		$('#frame-edit').show();
+		$('#frame-edit').hide();
+		$('#frame-view').show();
 	});
 });
 
