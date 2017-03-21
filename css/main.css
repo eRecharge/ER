@@ -577,4 +577,8 @@ div#projects {
     padding-top: 80px;
 }
 
-.jumbotron .btn{margin-top:10px;}
+.jumbotron .btn{
+	margin-top:10px;
+	min-width: 45%;
+}
+
