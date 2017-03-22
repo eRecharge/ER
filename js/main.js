@@ -65,16 +65,17 @@ $(document).ajaxComplete(function(){
 //Enabling and disabling Status Edit
 $(document).ajaxComplete(function(){
 	$('#edit-status').click(function(){
+		var srcedit=$(this).attr('rel');
 		$(this).hide();
 		$('#save-status').removeClass('hidden');
-		$('#frame-view').hide();
-		$('#frame-edit').show();
+		$('#frame-view').attr('src',srcedit);
 	});
 	$('#save-status').click(function(){
+		var srcview=$(this).attr('rel');
 		$(this).addClass('hidden');
 		$('#edit-status').show();
-		$('#frame-edit').hide();
-		$('#frame-view').show();
+		$('#frame-view').attr('src','');
+		$('#frame-view').html('<h3>Refreshed soon</h3>');
 	});
 });
 
