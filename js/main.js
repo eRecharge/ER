@@ -75,7 +75,9 @@ $(document).ajaxComplete(function(){
 		$(this).addClass('hidden');
 		$('#edit-status').show();
 		$('#frame-view').attr('src','');
-		$('#frame-view').html('<h3>Refreshed soon</h3>');
+		setTimeout (function(){
+			$('#frame-view').attr('src',srcview);
+	    	},50);
 	});
 });
 
