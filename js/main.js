@@ -55,7 +55,7 @@ $('.main-loader').click(function(e){
 //Disable submit button if nothing is there
 $(document).ajaxComplete(function(){
 	$('.ss-q-short').keyup(function() {
-	if($($('.ss-q-short')[0]).val() || $($('.ss-q-short')[2]).val()) {
+	if($($('.ss-q-short')[0]).val() || $($('.ss-q-short')[2]).val() || $($('.ss-q-short')[6]).val()) {
 		$('#ss-submit,#ss-conf').prop('disabled',false);
 	} else {
 		$('#ss-submit,#ss-conf').prop('disabled',true);
