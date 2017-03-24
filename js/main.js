@@ -79,6 +79,14 @@ $(document).ajaxComplete(function(){
 			$('#frame-view').attr('src',srcview);
 	    	},50);
 	});
+	$('.modal').on('shown.bs.modal',function(){
+		$('.myLoader').fadeIn();
+		modsrc=$(this).find('iframe').attr('src');
+		$(this).find('iframe').attr('src',modsrc)
+	});
+	$('iframe').on('load',function(){
+		$('.myLoader').fadeOut();
+	});
 });
 
 /* Top Stats Show Hide */
