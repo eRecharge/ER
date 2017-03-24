@@ -254,11 +254,12 @@ $(document).ajaxComplete(function(){
 		// replace "ss-form" with the ID of your form
 		setTimeout(function() {
 			$('.ss-form').trigger('reset');
-			$('#conf-modal').modal('hide')
+			$('#conf-modal').modal('hide');
+			$('#ss-conf').addClass('hidden');
+			$('#ss-submit').removeClass('hidden');
+			$('#ss-submit').prop('disabled','true');
 		}, 10);
-		$('#ss-conf').addClass('hidden');
-		$('#ss-submit').removeClass('hidden');
-		$('#ss-submit').prop('disabled','true');
+		
 	});
 	$('.mod-data').click(function(){
 		$('#mod-name').val($('#main-name').val());
